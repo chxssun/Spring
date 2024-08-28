@@ -1,0 +1,38 @@
+mysql-5.7.32
+* mysql ROOT 계정
+root / 
+
+심플홈페이지 템플릿
+db : sht
+id : sht
+pw : sht01
+
+엔터프라이즈 비지니스 템플릿
+db : ebt
+id : ebt
+pw : ebt01
+
+포털사이트 템플릿
+db : pst
+id : pst
+pw : pst01
+
+실습용 공통컴포넌트
+db : com
+id : com
+pw : com01
+
+공통컴포넌트 all-in-one
+db : comall
+id : com
+pw : com01
+
+모바일
+db : mobile
+id : mobile
+pw : mobile01
+
+디바이스API
+db : hyb
+id : hyb
+pw : hyb01
