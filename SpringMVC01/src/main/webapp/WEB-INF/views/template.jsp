@@ -15,31 +15,7 @@
 	  <h2>Spring MVC 01</h2>
 	  <div class="panel panel-default">
 	    <div class="panel-heading">Board</div>
-	    <div class="panel-body">
-	    	<table class="table table-bordered table-hover">
-				<thead>
-					<tr>
-						<td>번호</td>
-						<td>제목</td>
-						<td>작성자</td>
-						<td>작성일</td>
-						<td>조회수</td>
-					</tr>
-				</thead>
-				<tbody>
-					<!-- 게시글 내용 출력 -->
-					<c:forEach items="${list }" var="vo">
-					<tr>
-						<td><c:out value="${vo.idx }"/></td>
-						<td><c:out value="${vo.title }"/></td>
-						<td><c:out value="${vo.writer }"/></td>
-						<td><c:out value="${vo.indate }"/></td> 
-						<td><c:out value="${vo.count }"/></td> 
-					</tr>
-					</c:forEach>
-				</tbody>
-	    	</table>
-	    </div>
+	    <div class="panel-body">Panel Content</div>
 	    <div class="panel-footer">웹기반 인공지능 Track2 (B) - 김창선</div>
 	  </div>
 	</div>
