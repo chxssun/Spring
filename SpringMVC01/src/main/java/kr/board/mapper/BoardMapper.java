@@ -26,7 +26,7 @@ public interface BoardMapper {
 	public void countUpdate(int idx);
 
 	@Delete("DELETE FROM BOARD WHERE IDX = #{idx}")
-	public int boardDelete(int idx);
+	public void boardDelete(int idx);
 
 
 
