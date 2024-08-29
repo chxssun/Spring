@@ -28,10 +28,15 @@
 				</thead>
 				<tbody>
 					<!-- 게시글 내용 출력 -->
-					<c:forEach items="${list }" var="vo">
+					<c:forEach varStatus="i" items="${list }" var="vo">
 					<tr>
-						<td><c:out value="${vo.idx }"/></td>
-						<td><c:out value="${vo.title }"/></td>
+						<!-- <td><c:out value="${vo.idx }"/></td> --> 
+						<td><c:out value="${i.count }"/></td> <!-- i.index는 0부터 i.count는 1부터 -->
+						<td>
+						<a href="boardContents.do?idx=${vo.idx }">
+						<c:out value="${vo.title }"/>
+						</a>
+						</td>
 						<td><c:out value="${vo.writer }"/></td>
 						<td><c:out value="${vo.indate }"/></td> 
 						<td><c:out value="${vo.count }"/></td> 
@@ -39,6 +44,9 @@
 					</c:forEach>
 				</tbody>
 	    	</table>
+	 		
+	 		<a href="boardForm.do" class="btn btn-primary">글쓰기</a>
+	 		
 	    </div>
 	    <div class="panel-footer">웹기반 인공지능 Track2 (B) - 김창선</div>
 	  </div>
