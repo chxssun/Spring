@@ -7,12 +7,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<%
@@ -41,11 +38,13 @@
 						<td>${fn:split(vo.indate, " ")[0] }</td>
 					</tr>
 					<tr>
-						<td colspan="2" align="center"></td>
+						<td colspan="2" align="center">
+							<a href="boardUpdateForm.do?idx=${vo.idx }" class="btn btn-warning">수정</a>
+							<a href="boardDelete.do?idx=${vo.idx}" class="btn btn-danger">삭제</a>
+							<a href="boardList.do" class="btn btn-info">목록</a> 
+						</td>
 					</tr>
 				</table>
-				<a href="boardList.do" class="btn btn-info">목록</a>
-				<a href="boardDelete.do?idx=${vo.idx}" class="btn btn-danger">삭제</a>
 			</div>
 			<div class="panel-footer">웹기반 인공지능 Track2 (B) - 김창선</div>
 		</div>

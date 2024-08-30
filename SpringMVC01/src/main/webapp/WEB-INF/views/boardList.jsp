@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,12 +34,12 @@
 						<!-- <td><c:out value="${vo.idx }"/></td> --> 
 						<td><c:out value="${i.count }"/></td> <!-- i.index는 0부터 i.count는 1부터 -->
 						<td>
-						<a href="boardContents.do?idx=${vo.idx }">
-						<c:out value="${vo.title }"/>
-						</a>
+							<a href="boardContents.do?idx=${vo.idx }">
+								<c:out value="${vo.title }"/>
+							</a>
 						</td>
 						<td><c:out value="${vo.writer }"/></td>
-						<td><c:out value="${vo.indate }"/></td> 
+						<td>${fn:split(vo.indate, " ")[0] }</td> 
 						<td><c:out value="${vo.count }"/></td> 
 					</tr>
 					</c:forEach>

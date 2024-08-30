@@ -25,3 +25,5 @@ VALUES('기아 경기 어제 꿀잼','우천 중단으로 일찍 끝남 ㅋㅋ',
 COMMIT;
 
 SELECT * FROM BOARD;
+
+DELETE FROM BOARD WHERE IDX between 13 AND 16 ;
